@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr"> <!-- Default language -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="nav_about">Hakkımızda</title> <!-- Uses About Us key -->
+    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Updated Logo Text -->
+            <a href="index.html" class="logo">Ege Rüzgarı Kafe</a>
+            <nav>
+                <ul>
+                    <!-- Updated active class -->
+                    <li><a href="index.html" data-lang-key="nav_home">Ana Sayfa</a></li>
+                    <li><a href="about.html" class="active" data-lang-key="nav_about">Hakkımızda</a></li>
+                    <li><a href="contact.html" data-lang-key="nav_contact">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <button id="lang-tr" data-lang="tr" data-lang-key="lang_switch_tr">Türkçe</button> |
+                <button id="lang-en" data-lang="en" data-lang-key="lang_switch_en">English</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Consistent structure with container and padding -->
+    <main class="container page-padding">
+        <!-- Updated Content Keys -->
+        <h1 data-lang-key="about_title">Hikayemiz</h1>
+        <p class="intro" data-lang-key="about_intro">Ege Rüzgarı Kafe bir kafeden daha fazlasıdır; Ege kültürüne, basit yemeklere ve topluluğa olan sevgiden doğan bir tutku projesidir.</p>
+
+        <section class="about-story">
+            <p data-lang-key="about_story_p1">Zeynep Kaya her zaman ailesinin değerli Ege tariflerini paylaşmayı hayal ederken, kardeşi Barış'ın tasarıma keskin bir gözü ve özel kahveye artan bir tutkusu vardı. 2021'de yeteneklerini ve özlemlerini birleştirerek sevdikleri Güzelyalı'da Ege Rüzgarı Kafe'yi yarattılar. Vizyonları basitti: insanların kendilerini evlerinde hissedebilecekleri, taze, yerel malzemelerle yapılmış dürüst yemeklerin tadını çıkarabilecekleri ve sohbetler ve iyi kahve üzerinden bağlantı kurabilecekleri bir yer.</p>
+            <!-- Reference an appropriate image -->
+            <img src="images/2-interior.png" alt="Cozy cafe interior detail" class="inline-image">
+            <p data-lang-key="about_story_p2">El yapımı seramiklerden özenle seçilmiş kitaplığa ve taze pişmiş keklerin kokusuna kadar her detay onların kişisel dokunuşunu yansıtıyor. Zeynep mutfağı yönetiyor, geleneksel yemeklere nazik yaratıcılığını katarken, Barış her kahvenin mükemmel demlenmesini ve atmosferin her zaman davetkar olmasını sağlıyor. Yerel üreticileri ve sanatçıları desteklemeye inanıyorlar, kafeyi Çanakkale ruhunun gerçek bir yansıması haline getiriyorlar.</p>
+        </section>
+
+        <section class="about-philosophy">
+            <h2 data-lang-key="about_philosophy_title">Felsefemiz: Basit, Taze, İçten</h2>
+            <p data-lang-key="about_philosophy_text">Ege Rüzgarı Kafe'de basitliğin güzelliğine inanıyoruz. Güzelyalı ve daha geniş Çanakkale bölgesindeki yerel çiftçilerden ve pazarlardan temin edilen en taze mevsimlik malzemeleri kullanıyoruz. Yemeklerimiz içten – özenle hazırlanmış ve Ege misafirperverliğinin cömert ruhundan ilham almıştır. Herkesin hoş karşılandığı, rahat ettiği ve hem yemeklerimizle hem de ortamımızın nazik 'Ege esintisi' ile beslendiği bir alan yaratmayı hedefliyoruz.</p>
+        </section>
+
+        <section class="about-gallery">
+            <h2 data-lang-key="about_gallery_title">Kafemizden Bir Bakış</h2>
+            <div class="gallery-grid">
+                <!-- Use relevant image filenames -->
+                <img src="images/1-interior.png" alt="Cafe interior">
+                <img src="images/2-interior.png" alt="Cafe interior">
+                <img src="images/3-interior.png" alt="Cafe interior">
+               
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Identical Footer Structure -->
+    <footer>
+       <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p data-lang-key="footer_address">Kordon Boyu Sokak No: 18, Güzelyalı, Çanakkale, 17110, Türkiye</p>
+                    <p><a href="tel:+905391234567" data-lang-key="footer_phone">+90 539 123 45 67</a></p>
+                    <p><a href="mailto:iletisim@egeruzgarikafe.com" data-lang-key="footer_email">iletisim@egeruzgarikafe.com</a></p>
+                </div>
+                 <!-- Add social media links here if desired -->
+            </div>
+            <p class="copyright" data-lang-key="footer_rights">© 2024 Ege Rüzgarı Kafe. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- Ensure JS file is linked -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr"> <!-- Default language -->
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="site_title">Ege Rüzgarı Kafe - Güzelyalı | Ege Lezzetleri & Kahve</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons (optional, replace with your own SVGs if preferred) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Ege Rüzgarı Kafe</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active" data-lang-key="nav_home">Ana Sayfa</a></li>
+                    <li><a href="about.html" data-lang-key="nav_about">Hakkımızda</a></li>
+                    <li><a href="contact.html" data-lang-key="nav_contact">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <button id="lang-tr" data-lang="tr" data-lang-key="lang_switch_tr">Türkçe</button> |
+                <button id="lang-en" data-lang="en" data-lang-key="lang_switch_en">English</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.png" alt="Bright cafe interior with Aegean touches" class="hero-bg">
+            <div class="hero-content container">
+                <h1 data-lang-key="hero_title">Ege Rüzgarını Yakalayın</h1>
+                <p data-lang-key="hero_subtitle">Güzelyalı'da taze lezzetler, rahat köşeler ve artizan kahve.</p>
+                <a href="#menu-highlights" class="btn" data-lang-key="hero_button">Lezzetlerimizi Keşfedin</a>
+            </div>
+        </section>
+
+        <section class="welcome container">
+            <h2 data-lang-key="welcome_title">Ege Rüzgarı Kafe'ye Hoş Geldiniz</h2>
+            <p data-lang-key="welcome_text">Güzelyalı Kordon Boyu'nda yer alan Ege Rüzgarı Kafe, taze Ege tatları ve sıcak bir misafirperverlik vahasıdır. 2021 yılında kardeşler Zeynep ve Barış Kaya tarafından kurulan kafemiz, hayata geçirilmiş bir rüyadır – sevgiyle yapılmış basit, lezzetli yemekleri paylaşmak ve rahat, sanatsal bir atmosferde mükemmel bir fincan kahvenin tadını çıkarmak için bir yer. Size Ege'nin en iyisini sunmak için yerel kaynakları kullanıyor ve günlük olarak pişiriyoruz.</p>
+            <a href="about.html" class="link" data-lang-key="welcome_link">Hikayemizi Okuyun</a>
+        </section>
+
+        <section id="menu-highlights" class="menu-highlights-section">
+            <div class="container">
+                <h2 class="section-title" data-lang-key="menu_section_title">Ege Rüzgarı'ndan Bir Tadım</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item-card">
+                        <img src="images/borek.png" data-lang-key-alt="menu_item1_img_alt" alt="Lezzetli Otlu Börek diliminin yakından görünümü">
+                        <h3 data-lang-key="menu_item1_title">İmza Otlu Böreğimiz</h3>
+                        <p data-lang-key="menu_item1_desc">Çanakkale tepelerinden toplanan mevsimlik yabani otların karışımıyla doldurulmuş, çıtır çıtır, altın sarısı börek. Gerçek bir yerel gelenek tadı.</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="images/kek.jpeg" data-lang-key-alt="menu_item2_img_alt" alt="Slice of Almond and Fig Cake">
+                        <h3 data-lang-key="menu_item2_title">Bademli & İncirli Keyif Keki</h3>
+                        <p data-lang-key="menu_item2_desc">Zeynep'in gizli tarifi! Badem ve tatlı incirlerle bezenmiş, harika nemli ve rustik bir kek. Kahvelerimizle mükemmel uyum sağlar.</p>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="images/coffe.jpeg" data-lang-key-alt="menu_item3_img_alt" alt="Cup of coffee and glass of lemonade"> <!-- Replace with a real image of coffee/lemonade -->
+                        <h3 data-lang-key="menu_item3_title">Artizan Kahve & Ev Yapımı Limonata</h3>
+                        <p data-lang-key="menu_item3_desc">Ustalıkla demlenmiş yerel Türk kahvesinden, ferahlatıcı, lezzetli ev yapımı limonataya kadar – mükemmel yudumunuzu burada bulun.</p>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 2rem;">
+                    <a href="#" class="btn btn-secondary" data-lang-key="menu_button_full">Tam Menüyü Görüntüle (PDF yakında!)</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us">
+            <div class="container">
+                <h2 class="section-title" data-lang-key="why_choose_title">Kafemizi Neden Seveceksiniz?</h2>
+                <div class="why-choose-grid">
+                    <div class="why-item">
+                        <i class="fas fa-leaf fa-3x why-icon" data-lang-key-alt="why1_icon_alt" aria-label="Fresh ingredients icon"></i>
+                        <h3 data-lang-key="why1_title">Yerel Kaynaklı Tazelik</h3>
+                        <p data-lang-key="why1_text">Size Ege'nin tüm iyilikleriyle dolu, en taze mevsimlik malzemeleri sunmak için yerel çiftçiler ve pazarlarla ortaklık yapıyoruz.</p>
+                    </div>
+                    <div class="why-item">
+                        <i class="fas fa-cookie-bite fa-3x why-icon" data-lang-key-alt="why2_icon_alt" aria-label="Homemade goodness icon"></i>
+                        <h3 data-lang-key="why2_title">Sevgiyle Pişirildi & Yapıldı</h3>
+                        <p data-lang-key="why2_text">Günlük pişen börek ve keklerimizden özenle hazırlanan mezelerimize kadar her şey tutkuyla kendi mutfağımızda yapılır.</p>
+                    </div>
+                    <div class="why-item">
+                        <i class="fas fa-mug-hot fa-3x why-icon" data-lang-key-alt="why3_icon_alt" aria-label="Cozy atmosphere icon"></i>
+                        <h3 data-lang-key="why3_title">Sıcak & Davetkar Ortam</h3>
+                        <p data-lang-key="why3_text">Aydınlık, konforlu mekanımızda rahatlayın. Gevşemek, okumak veya arkadaşlarla sohbet etmek için mükemmel bir köşe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title" data-lang-key="testimonials_title">Misafirlerimiz Ne Diyor?</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text" data-lang-key="testimonial1_text">"Kesinlikle büyüleyici bir kafe! Otlu börek harikaydı ve kahve mükemmeldi. Çok sıcak ve samimi bir atmosfer. Güzelyalı'daki yeni favori mekanım!"</p>
+                        <p class="testimonial-author" data-lang-key="testimonial1_author">- Ayşe K., İstanbul'dan Ziyaretçi</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text" data-lang-key="testimonial2_text">"Ege Rüzgarı Kafe bir mücevher. Mezeler çok taze ve lezzetli, Zeynep'in kekleri ise mutlaka denenmeli. Rahat ortamını ve güzel dekorunu seviyorum. Şiddetle tavsiye ederim!"</p>
+                        <p class="testimonial-author" data-lang-key="testimonial2_author">- James B., Seyahat Blog Yazarı</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text" data-lang-key="testimonial3_text">"Türkiye'de yediğim en iyi San Sebastian cheesecake! Ve ev yapımı limonata çok ferahlatıcı. Barış ve Zeynep harika ev sahipleri. Gerçekten hoş bir yer."</p>
+                        <p class="testimonial-author" data-lang-key="testimonial3_author">- Elif S., Yerel Sakin</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ambiance container page-section"> <!-- Re-using ambiance, maybe less text here if visual above -->
+             <h2 class="section-title" data-lang-key="ambiance_title">Bizim Rahat Köşemiz</h2>
+             <p data-lang-key="ambiance_text">Ege Rüzgarı Kafe'yi davetkar bir oturma odası gibi hissettirmek için tasarladık. Aydınlık ve havadar, el yapımı ahşap mobilyalar, renkli yerel seramikler, rahat minderler ve Çanakkaleli sanatçılardan bir tutam sanat. Rafımızdan bir kitap alın, güneşli bir yer bulun ve Ege esintisinin sizi yatıştırmasına izin verin.</p>
+           
+        </section>
+
+        <section class="cta-section">
+            <div class="container text-center">
+                <h2 data-lang-key="cta_title">Esintiyi Deneyimlemeye Hazır Mısınız?</h2>
+                <p data-lang-key="cta_text">Ege'nin keyifli bir tadı için Güzelyalı'da bizi ziyaret edin. Sizi ağırlamayı dört gözle bekliyoruz!</p>
+                <a href="contact.html#map-section" class="btn" data-lang-key="cta_button_visit">Bizi Bulun & Ziyaret Edin</a>
+                <a href="contact.html#contact-form" class="btn btn-outline" data-lang-key="cta_button_contact" style="margin-left: 10px;">Soru Sorun</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p data-lang-key="footer_address">Kordon Boyu Sokak No: 18, Güzelyalı, Çanakkale, 17110, Türkiye</p>
+                    <p><a href="tel:+905391234567" data-lang-key="footer_phone">+90 539 123 45 67</a></p>
+                    <p><a href="mailto:iletisim@egeruzgarikafe.com" data-lang-key="footer_email">iletisim@egeruzgarikafe.com</a></p>
+                </div>
+            </div>
+            <p class="copyright" data-lang-key="footer_rights">© 2024 Ege Rüzgarı Kafe. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
